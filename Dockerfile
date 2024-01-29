@@ -12,4 +12,4 @@ RUN rm -rf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 
 # 添加一个启动脚本为CMD命令
-CMD sed -i "s/server_name/$server_name/g" /etc/nginx/nginx.conf && nginx -g 'daemon off;'
+CMD sed -i "s/example.com/$server_name/g" /etc/nginx/nginx.conf && nginx -g 'daemon off;'
